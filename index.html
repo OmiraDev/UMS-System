@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMS Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Container for the role selection */
+        .role-button-group {
+            margin-bottom: 20px;
+        }
+
+        .role-button-group label {
+            display: block;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        /* Style for the segmented control container */
+        .segmented-control {
+            display: flex;
+            width: 100%;
+            border: 1px solid #007bff;
+            /* Use primary color for border */
+            border-radius: 5px;
+            overflow: hidden;
+            /* Ensures children respect border radius */
+        }
+
+        /* Style for individual buttons */
+        .segmented-control button {
+            flex-grow: 1;
+            /* Each button takes equal width */
+            padding: 12px 10px;
+            /* Adjust padding */
+            font-size: 14px;
+            /* Slightly smaller font */
+            background-color: #ffffff;
+            color: #007bff;
+            border: none;
+            border-right: 1px solid #007bff;
+            /* Separator lines */
+            cursor: pointer;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        /* Remove border from the last button */
+        .segmented-control button:last-child {
+            border-right: none;
+        }
+
+        /* Style for the selected/active button */
+        .segmented-control button.active {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+        /* Style for the error message */
+        #error-message {
+            color: red;
+            font-weight: bold;
+            min-height: 1.2em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-branding">
+            <div class="logo-placeholder">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.24L17.5 7 12 9.76 6.5 7 12 4.24zM4 9.35l8 4.61v8.79l-8-4.61V9.35zm16 0v8.79l-8 4.61v-8.79l8-4.61z">
+                    </path>
+                </svg>
+            </div>
+            <h1>Utility Management System</h1>
+            <p>Welcome. Please log in to access your dashboard.</p>
+        </div>
+
+        <div class="login-form-container">
+            <form id="login-form" action="#" method="POST">
+                <h2>System Login</h2>
+
+                <p id="error-message"></p>
+
+                <div class="form-group role-button-group">
+                    <label>Select Your Role:</label>
+                    <div class="segmented-control">
+                        <button type="button" data-role="admin">Admin</button>
+                        <button type="button" data-role="cashier">Cashier</button>
+                        <button type="button" data-role="manager">Manager</button>
+                        <button type="button" data-role="field">Field Officer</button>
+                        <input type="hidden" id="user-role" name="user-role" value="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="username" class="sr-only">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Username / Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="sr-only">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+
+                <a href="#" class="forgot-password">Forgot Password?</a>
+
+                <button type="submit" class="login-button">Login</button>
+
+            </form>
+        </div>
+
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

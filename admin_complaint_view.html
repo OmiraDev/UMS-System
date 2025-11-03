@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Complaint - UMS</title>
+
+    <link rel="stylesheet" href="admin_layout.css">
+
+    <link rel="stylesheet" href="admin_forms.css">
+
+    <link rel="stylesheet" href="admin_complaints.css">
+
+    <link rel="stylesheet" href="admin_complaint_view.css">
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="header-logo">
+                <a href="admin_dashboard.html">ADMIN</a>
+            </div>
+            <div class="header-user">
+                <span>Welcome, Yasiru</span>
+                <a href="index.html" class="logout-link">Logout</a>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="admin_dashboard.html">Dashboard</a></li>
+                    <li><a href="admin_customers.html">Customer Management</a></li>
+                    <li><a href="admin_services.html">Service Management</a></li>
+                    <li><a href="admin_tariffs.html">Tariff Plans</a></li>
+                    <li class="nav-active"><a href="admin_complaints.html">Complaints / Support</a></li>
+                    <li><a href="admin_reports.html">Reports</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="main-header">
+                <h1>Ticket-01</h1>
+                <a href="admin_complaints.html" class="btn btn-secondary-outline">Back to List</a>
+            </div>
+
+            <div class="complaint-grid">
+
+                <section class="content-section">
+                    <h2>Complaint Details</h2>
+
+                    <div class="info-grid">
+                        <div class="info-block">
+                            <label>Customer</label>
+                            <p>John Doe</p>
+                        </div>
+                        <div class="info-block">
+                            <label>Ticket ID</label>
+                            <p>01</p>
+                        </div>
+                        <div class="info-block">
+                            <label>Date Submitted</label>
+                            <p>2025-10-27 10:30 AM</p>
+                        </div>
+                        <div class="info-block">
+                            <label>Status</label>
+                            <p><span class="status-open">Open</span></p>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <label>Subject</label>
+                        <p>Billing Error on Invoice B-5001</p>
+                    </div>
+
+                    <div class="info-block">
+                        <label>Description</label>
+                        <div class="complaint-description">
+                            "Hello, I just received my bill and it seems to be incorrect. It's much higher than usual,
+                            but my usage hasn't changed. Can someone please look into this? The bill in question is
+                            #B-5001. Thanks."
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Admin Actions</h2>
+
+                    <form action="admin_complaints.html" method="GET">
+                        <div class="form-group">
+                            <label for="ticket-status">Change Status</label>
+                            <select id="ticket-status" name="ticket-status">
+                                <option value="open" selected>Open</option>
+                                <option value="progress">In Progress</option>
+                                <option value="closed">Closed</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="internal-note">Add Internal Note</label>
+                            <textarea id="internal-note" name="internal-note" rows="8"
+                                placeholder="e.g., Checked meter readings, found error in slab calculation..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </form>
+                </section>
+            </div>
+
+        </main>
+
+    </div>
+    <script src="admin_complaints_search.js"></script>
+</body>
+
+</html>

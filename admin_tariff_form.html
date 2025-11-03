@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Tariff - UMS</title>
+
+    <link rel="stylesheet" href="admin_layout.css">
+
+    <link rel="stylesheet" href="admin_forms.css">
+
+    <link rel="stylesheet" href="admin_tariff_form.css">
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="header-logo">
+                <a href="admin_dashboard.html">ADMIN</a>
+            </div>
+            <div class="header-user">
+                <span>Welcome, Yasiru</span>
+                <a href="index.html" class="logout-link">Logout</a>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="admin_dashboard.html">Dashboard</a></li>
+                    <li><a href="admin_customers.html">Customer Management</a></li>
+                    <li><a href="admin_services.html">Service Management</a></li>
+                    <li class="nav-active"><a href="admin_tariffs.html">Tariff Plans</a></li>
+                    <li><a href="admin_complaints.html">Complaints / Support</a></li>
+                    <li><a href="admin_reports.html">Reports</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="main-header">
+                <h1>Edit Tariff: Electricity Supply</h1>
+            </div>
+
+            <section class="content-section">
+                <form action="admin_tariffs.html" method="GET">
+
+                    <div class="form-group">
+                        <label for="utility-desc">Description</label>
+                        <input type="text" id="utility-desc" name="utility-desc" value="Billing based on tariff slabs.">
+                    </div>
+
+                    <hr class="form-divider">
+
+                    <h2>Tariff Slabs</h2>
+
+                    <div class="tariff-slabs">
+                        <div class="slab-row">
+                            <div class="form-group">
+                                <label for="slab1-name">Slab 1 Name</label>
+                                <input type="text" id="slab1-name" value="Slab 1 (0-60 kWh)">
+                            </div>
+                            <div class="form-group">
+                                <label for="slab1-rate">Rate (per kWh)</label>
+                                <input type="text" id="slab1-rate" value="RS:0.15">
+                            </div>
+                            <button type="button" class="btn-remove">Remove</button>
+                        </div>
+
+                        <div class="slab-row">
+                            <div class="form-group">
+                                <label for="slab2-name">Slab 2 Name</label>
+                                <input type="text" id="slab2-name" value="Slab 2 (61-90 kWh)">
+                            </div>
+                            <div class="form-group">
+                                <label for="slab2-rate">Rate (per kWh)</label>
+                                <input type="text" id="slab2-rate" value="RS:0.25">
+                            </div>
+                            <button type="button" class="btn-remove">Remove</button>
+                        </div>
+
+                        <div class="slab-row">
+                            <div class="form-group">
+                                <label for="slab3-name">Slab 3 Name</label>
+                                <input type="text" id="slab3-name" value="Slab 3 (91+ kWh)">
+                            </div>
+                            <div class="form-group">
+                                <label for="slab3-rate">Rate (per kWh)</label>
+                                <input type="text" id="slab3-rate" value="RS:0.40">
+                            </div>
+                            <button type="button" class="btn-remove">Remove</button>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-secondary-outline btn-add-slab">Add New Slab</button>
+
+                    <hr class="form-divider">
+
+                    <h2>Fixed Charges</h2>
+                    <div class="form-group">
+                        <label for="fixed-charge">Fixed Monthly Charge</label>
+                        <input type="text" id="fixed-charge" name="fixed-charge" value="RS:5.00">
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                        <a href="admin_tariffs.html" class="btn btn-secondary-outline">Cancel</a>
+                    </div>
+
+                </form>
+            </section>
+
+        </main>
+
+    </div>
+    <script src="admin_tariff_form.js"></script>
+</body>
+
+</html>

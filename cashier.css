@@ -1,0 +1,120 @@
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    border-radius: 0 5px 5px 0;
+}
+
+
+
+.payment-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.customer-info h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.balance-due {
+    background-color: #fff4e6; 
+    border: 1px solid #ffe0b3;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.balance-due label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    display: block;
+}
+
+.balance-due p {
+    font-size: 32px;
+    font-weight: bold;
+    color: #d9534f; 
+    margin: 0;
+}
+
+
+.payment-form {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.btn-full-width {
+    width: 100%;
+}
+
+
+.unpaid-bills {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.unpaid-bills h3 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.bill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bill-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.bill-list li:last-child {
+    border-bottom: none;
+}
+
+.bill-list .bill-id {
+    font-weight: 600;
+}
+
+.bill-list .bill-date {
+    font-size: 14px;
+    color: #777;
+}
+
+.bill-list .bill-amount {
+    font-weight: bold;
+    color: #d9534f;
+}
+
+
+
+@media (max-width: 900px) {
+    .payment-details-grid {
+        grid-template-columns: 1fr; 
+    }
+}

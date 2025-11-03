@@ -1,0 +1,43 @@
+
+
+.tariff-slabs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.slab-row {
+    display: grid;    
+    grid-template-columns: 1fr 1fr auto;
+    gap: 20px;
+    align-items: flex-end; 
+}
+
+
+.slab-row .form-group {
+    margin-bottom: 0;
+}
+
+.btn-remove {
+    background-color: #fdd;
+    color: #d9534f;
+    border: 1px solid #d9534f;
+    border-radius: 5px;
+    padding: 12px 15px; 
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-remove:hover {
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.btn-add-slab {
+
+    padding: 10px 15px;
+    font-size: 14px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Reading - UMS</title>
+
+    <link rel="stylesheet" href="mobile_style.css">
+</head>
+
+<body>
+
+    <div class="mobile-container">
+
+        <header class="mobile-header header-with-back">
+
+            <a href="field_officer_route.html" class="back-link"> Back to Route</a>
+        </header>
+
+        <main class="mobile-main">
+            <h1>Enter Meter Reading</h1>
+
+            <div class="reading-info">
+                <div class="info-group">
+                    <label>Customer</label>
+                    <p>John Doe</p>
+                </div>
+                <div class="info-group">
+                    <label>Address</label>
+                    <p>123 Green St.</p>
+                </div>
+                <div class="info-group">
+                    <label>Meter ID</label>
+                    <p>E-90210</p>
+                </div>
+                <div class="info-group last-reading">
+                    <label>Last Reading</label>
+                    <p>15024 kWh</p>
+                </div>
+            </div>
+
+            <form action="#" method="POST" class="reading-form">
+                <label for="current-reading" class="form-label-large">Current Reading</label>
+
+                <input type="tel" id="current-reading" name="current-reading" class="form-input-large" pattern="[0-9]*"
+                    inputmode="numeric">
+
+                <label for="notes" class="form-label-note">Add Note (Optional)</label>
+                <textarea id="notes" name="notes" rows="8" placeholder="e.g., Meter is damaged, no access..."
+                    style="resize: none;"></textarea>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Submit Reading</button>
+                    <button type="button" class="btn-skip">Skip Customer</button>
+                </div>
+            </form>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

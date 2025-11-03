@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register New Meter - UMS</title>
+
+    <link rel="stylesheet" href="admin_layout.css">
+
+    <link rel="stylesheet" href="admin_forms.css">
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="header-logo">
+                <a href="#">ADMIN</a>
+            </div>
+            <div class="header-user">
+                <span>Welcome, Yasiru</span>
+                <a href="index.html" class="logout-link">Logout</a>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="admin_dashboard.html">Dashboard</a></li>
+                    <li><a href="admin_customers.html">Customer Management</a></li>
+                    <li class="nav-active"><a href="admin_services.html">Service Management</a></li>
+                    <li><a href="admin_tariffs.html">Tariff Plans</a></li>
+                    <li><a href="admin_complaints.html">Complaints / Support</a></li>
+                    <li><a href="admin_reports.html">Reports</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="main-header">
+                <h1>Register New Meter</h1>
+            </div>
+
+            <section class="content-section">
+                <form action="#" method="POST">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="meter-id">Meter ID</label>
+                            <input type="text" id="meter-id" name="meter-id" placeholder="e.g., E-90211">
+                        </div>
+                        <div class="form-group">
+                            <label for="utility-type">Utility Type</label>
+                            <select id="utility-type" name="utility-type">
+                                <option value="electricity">Electricity</option>
+                                <option value="water">Water</option>
+                                <option value="gas">Gas</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="meter-status">Status</label>
+                            <select id="meter-status" name="meter-status">
+                                <option value="stock">In Stock (Unassigned)</option>
+                                <option value="active">Active (Assigned)</option>
+                                <option value="maintenance">Maintenance</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-id">Assign to Customer ID (Optional)</label>
+                            <input type="text" id="customer-id" name="customer-id" placeholder="e.g., C-1022">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Notes / Location Details</label>
+                        <textarea id="notes" name="notes" rows="4"
+                            placeholder="e.g., Stored in Warehouse B, or details of installation..."></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Save Meter</button>
+                        <a href="admin_services.html" class="btn btn-secondary-outline">Cancel</a>
+                    </div>
+
+                </form>
+            </section>
+
+        </main>
+
+    </div>
+    <script src="admin_meter_form.js"></script>
+
+</body>
+
+</html>

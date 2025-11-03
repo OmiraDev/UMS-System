@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Report - UMS</title>
+
+    <link rel="stylesheet" href="admin_layout.css">
+    <link rel="stylesheet" href="admin_customers.css">
+    <link rel="stylesheet" href="manager_reports.css">
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="header-logo">
+                <a href="manager_dashboard.html">MANAGER</a>
+            </div>
+            <div class="header-user">
+                <span>Welcome, Yasiru</span>
+                <a href="index.html" class="logout-link">Logout</a>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="manager_dashboard.html">Dashboard</a></li>
+                    <li class="nav-active"><a href="manager_revenue_report.html">Revenue Reports</a></li>
+                    <li><a href="manager_usage_report.html">Usage Reports</a></li>
+                    <li><a href="manager_customer_report.html">Customer Reports</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="main-header">
+                <h1>Revenue Report</h1>
+            </div>
+
+            <section class="content-section">
+                <h2>Monthly Revenue Summary</h2>
+                <p class="report-description">
+                    This report shows the total revenue collected per month.
+                    (This would be powered by the `v_MonthlyRevenue` database view).
+                </p>
+
+                <div class="customer-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Month</th>
+                                <th class="text-right">Total Revenue</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2025</td>
+                                <td>September</td>
+                                <td class="text-right">RS:115,100.00</td>
+                            </tr>
+                            <tr>
+                                <td>2025</td>
+                                <td>August</td>
+                                <td class="text-right">RS:112,000.00</td>
+                            </tr>
+                            <tr>
+                                <td>2025</td>
+                                <td>July</td>
+                                <td class="text-right">RS:110,500.00</td>
+                            </tr>
+                            <tr>
+                                <td>2025</td>
+                                <td>June</td>
+                                <td class="text-right">RS:108,200.00</td>
+                            </tr>
+                            <tr>
+                                <td>2025</td>
+                                <td>May</td>
+                                <td class="text-right">RS:105,000.00</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2" class="text-right"><strong>Total</strong></td>
+                                <td class="text-right"><strong>RS:550,800.00</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Reports - UMS</title>
+
+    <link rel="stylesheet" href="admin_layout.css">
+
+    <link rel="stylesheet" href="admin_forms.css">
+
+    <link rel="stylesheet" href="admin_customers.css">
+
+    <link rel="stylesheet" href="admin_reports.css">
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="header-logo">
+                <a href="#">ADMIN</a>
+            </div>
+            <div class="header-user">
+                <span>Welcome, Yasiru</span>
+                <a href="index.html" class="logout-link">Logout</a>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="admin_dashboard.html">Dashboard</a></li>
+                    <li><a href="admin_customers.html">Customer Management</a></li>
+                    <li><a href="admin_services.html">Service Management</a></li>
+                    <li><a href="admin_tariffs.html">Tariff Plans</a></li>
+                    <li><a href="admin_complaints.html">Complaints / Support</a></li>
+                    <li class="nav-active"><a href="admin_reports.html">Reports</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="main-header">
+                <h1>Generate Reports</h1>
+            </div>
+
+            <div class="report-generators">
+                <section class="content-section report-card">
+                    <h3>Revenue Collection Report</h3>
+                    <form class="report-form" action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="rev-start-date">Start Date</label>
+                                <input type="date" id="rev-start-date" name="rev-start-date">
+                            </div>
+                            <div class="form-group">
+                                <label for="rev-end-date">End Date</label>
+                                <input type="date" id="rev-end-date" name="rev-end-date">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Generate</button>
+                    </form>
+                </section>
+
+                <section class="content-section report-card">
+                    <h3>Defaulters Report</h3>
+                    <form class="report-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="def-min-due">Minimum Amount Due</label>
+                            <input type="text" id="def-min-due" name="def-min-due" placeholder="RS:100.00">
+                        </div>
+                        <div class="form-group">
+                            <label for="def-min-days">Minimum Days Overdue</label>
+                            <input type="text" id="def-min-days" name="def-min-days" placeholder="30">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Generate</button>
+                    </form>
+                </section>
+            </div>
+
+            <section class="content-section">
+                <h2>Report Results</h2>
+                <p class="report-subtitle">Showing: Defaulters with > RS:100.00 due for > 30 days</p>
+
+                <div class="customer-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Customer ID</th>
+                                <th>Name</th>
+                                <th>Amount Owed</th>
+                                <th>Days Overdue</th>
+                                <th>Last Contact</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>C-1022</td>
+                                <td>John Doe</td>
+                                <td class="text-danger">Rs:320.50</td>
+                                <td>45 Days</td>
+                                <td>2025-10-15</td>
+                            </tr>
+                            <tr>
+                                <td>C-1101</td>
+                                <td>ABC Corp</td>
+                                <td class="text-danger">Rs:1,200.00</td>
+                                <td>42 Days</td>
+                                <td>2025-10-15</td>
+                            </tr>
+                            <tr>
+                                <td>C-1024</td>
+                                <td>Jane Smith</td>
+                                <td class="text-danger">Rs:170.50</td>
+                                <td>31 Days</td>
+                                <td>2025-10-20</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

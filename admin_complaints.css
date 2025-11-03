@@ -1,0 +1,22 @@
+.status-open,
+.status-progress,
+.status-closed {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 12px;
+    color: #fff;
+}
+
+.status-open {
+    background-color: #d9534f; 
+}
+
+.status-progress {
+    background-color: #f0ad4e; 
+}
+
+.status-closed {
+    background-color: #6c757d; 
+}

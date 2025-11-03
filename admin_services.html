@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Management - UMS</title>
+
+    <link rel="stylesheet" href="admin_layout.css">
+    <link rel="stylesheet" href="admin_customers.css">
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="header-logo">
+                <a href="admin_dashboard.html">ADMIN</a>
+            </div>
+            <div class="header-user">
+                <span>Welcome, Yasiru</span>
+                <a href="index.html" class="logout-link">Logout</a>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="admin_dashboard.html">Dashboard</a></li>
+                    <li><a href="admin_customers.html">Customer Management</a></li>
+                    <li class="nav-active"><a href="admin_services.html">Service Management</a></li>
+                    <li><a href="admin_tariffs.html">Tariff Plans</a></li>
+                    <li><a href="admin_complaints.html">Complaints / Support</a></li>
+                    <li><a href="admin_reports.html">Reports</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="main-header">
+                <h1>Service & Meter Management</h1>
+                <a href="admin_meter_form.html" class="btn btn-primary">Register New Meter</a>
+            </div>
+
+            <section class="content-section">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search by Meter ID, Customer ID, or Address...">
+                    <button class="btn btn-secondary">Search</button>
+                </div>
+
+                <div class="customer-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Meter ID</th>
+                                <th>Utility Type</th>
+                                <th>Assigned Customer ID</th>
+                                <th>Address</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>E-90210</td>
+                                <td>Electricity</td>
+                                <td>C-1022</td>
+                                <td>123 Green St.</td>
+                                <td><span class="status-active">Active</span></td>
+                                <td>
+                                    <a href="admin_meter_form.html" class="btn-action btn-edit">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>W-11235</td>
+                                <td>Water</td>
+                                <td>C-1023</td>
+                                <td>456 Main Ave.</td>
+                                <td><span class="status-active">Active</span></td>
+                                <td>
+                                    <a href="admin_meter_form.html" class="btn-action btn-edit">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>G-44556</td>
+                                <td>Gas</td>
+                                <td>C-1024</td>
+                                <td>789 Oak Rd.</td>
+                                <td><span class="status-active">Active</span></td>
+                                <td>
+                                    <a href="admin_meter_form.html" class="btn-action btn-edit">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>E-90100</td>
+                                <td>Electricity</td>
+                                <td>-</td>
+                                <td>(Unassigned)</td>
+                                <td><span class="status-inactive">Stock</span></td>
+                                <td>
+                                    <a href="admin_meter_form.html" class="btn-action btn-edit">Edit</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+    <script src="admin_services_search.js"></script>
+</body>
+
+</html>

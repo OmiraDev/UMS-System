@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usage Report - UMS</title>
+
+    <link rel="stylesheet" href="admin_layout.css">
+    <link rel="stylesheet" href="admin_customers.css">
+    <link rel="stylesheet" href="manager_reports.css">
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="header-logo">
+                <a href="manager_dashboard.html">MANAGER</a>
+            </div>
+            <div class="header-user">
+                <span>Welcome, Yasiru</span>
+                <a href="index.html" class="logout-link">Logout</a>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="manager_dashboard.html">Dashboard</a></li>
+                    <li><a href="manager_revenue_report.html">Revenue Reports</a></li>
+                    <li class="nav-active"><a href="manager_usage_report.html">Usage Reports</a></li>
+                    <li><a href="manager_customer_report.html">Customer Reports</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="main-header">
+                <h1>Usage Report (Monthly)</h1>
+            </div>
+
+            <section class="content-section">
+                <h2>Total Consumption by Utility</h2>
+                <p class="report-description">
+                    This report shows the total units consumed across all customers, broken down by utility type for the
+                    last billing cycle.
+                </p>
+
+                <div class="customer-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Utility Type</th>
+                                <th>Unit</th>
+                                <th class="text-right">Total Consumption</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Electricity</td>
+                                <td>kWh</td>
+                                <td class="text-right">540,000 kWh</td>
+                            </tr>
+                            <tr>
+                                <td>Water</td>
+                                <td>m³</td>
+                                <td class="text-right">22,000 m³</td>
+                            </tr>
+                            <tr>
+                                <td>Gas</td>
+                                <td>units</td>
+                                <td class="text-right">15,000 units</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+
+</html>

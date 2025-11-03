@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment History - UMS</title>
+
+    <link rel="stylesheet" href="admin_layout.css">
+
+    <link rel="stylesheet" href="admin_forms.css">
+
+    <link rel="stylesheet" href="admin_customers.css">
+
+    <link rel="stylesheet" href="cashier_history.css">
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="header-logo">
+                <a href="#">CASHIER</a>
+            </div>
+            <div class="header-user">
+                <span>Welcome, Yasiru</span>
+                <a href="index.html" class="logout-link">Logout</a>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="cashier_payment.html">Process Payment</a></li>
+                    <li><a href="cashier_billing.html">Billing</a></li>
+                    <li class="nav-active"><a href="cashier_history.html">Payment History</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="main-header">
+                <h1>Payment History</h1>
+            </div>
+
+            <section class="content-section">
+                <h2>Filter Transactions</h2>
+                <form class="report-form" action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="filter-date-start">Start Date</label>
+                            <input type="date" id="filter-date-start" name="filter-date-start">
+                        </div>
+                        <div class="form-group">
+                            <label for="filter-date-end">End Date</label>
+                            <input type="date" id="filter-date-end" name="filter-date-end">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="filter-customer-id">Customer ID</label>
+                            <input type="text" id="filter-customer-id" name="filter-customer-id"
+                                placeholder="e.g., C-1022">
+                        </div>
+                        <div class="form-group">
+                            <label for="filter-status">Status</label>
+                            <select id="filter-status" name="filter-status">
+                                <option value="all">All</option>
+                                <option value="completed">Completed</option>
+                                <option value="refunded">Refunded</option>
+                                <option value="failed">Failed</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Filter</button>
+                </form>
+            </section>
+
+            <section class="content-section">
+                <h2>Transaction Log</h2>
+
+                <div class="customer-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Transaction ID</th>
+                                <th>Date / Time</th>
+                                <th>Customer ID</th>
+                                <th>Amount</th>
+                                <th>Method</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>2025-10-27 10:30 AM</td>
+                                <td>C-1022</td>
+                                <td>RS:320.50</td>
+                                <td>Cash</td>
+                                <td><span class="status-completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>02</td>
+                                <td>2025-10-26 04:15 PM</td>
+                                <td>C-1101</td>
+                                <td>RS:1,200.00</td>
+                                <td>Card</td>
+                                <td><span class="status-completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>03</td>
+                                <td>2025-10-26 02:00 PM</td>
+                                <td>C-1024</td>
+                                <td>RS:170.50</td>
+                                <td>Card</td>
+                                <td><span class="status-failed">Failed</span></td>
+                            </tr>
+                            <tr>
+                                <td>04</td>
+                                <td>2025-10-25 11:00 AM</td>
+                                <td>C-1023</td>
+                                <td>RS:50.00</td>
+                                <td>Cash</td>
+                                <td><span class="status-refunded">Refunded</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+    <script src="cashier_history_search.js"></script>
+</body>
+
+</html>

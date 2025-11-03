@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add/Edit Customer - UMS</title>
+
+    <link rel="stylesheet" href="admin_layout.css">
+    <link rel="stylesheet" href="admin_forms.css">
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="header-logo">
+                <a href="admin_dashboard.html">ADMIN</a>
+            </div>
+            <div class="header-user">
+                <span>Welcome, Yasiru</span>
+                <a href="index.html" class="logout-link">Logout</a>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="admin_dashboard.html">Dashboard</a></li>
+                    <li class="nav-active"><a href="admin_customers.html">Customer Management</a></li>
+                    <li><a href="admin_services.html">Service Management</a></li>
+                    <li><a href="admin_tariffs.html">Tariff Plans</a></li>
+                    <li><a href="admin_complaints.html">Complaints / Support</a></li>
+                    <li><a href="admin_reports.html">Reports</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+
+
+            <div class="main-header">
+
+                <a href="admin_customers.html" class="btn btn-secondary-outline">Back to List</a>
+            </div>
+            <div class="main-header">
+                <h1>Edit Customer Details</h1>
+            </div>
+
+            <section class="content-section">
+                <form action="admin_customers.html" method="GET">
+
+
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" value="John">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" value="jayathilaka">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" value="user@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" value="+94 77 123 4567">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="cust-type">Customer Type</label>
+                            <select id="cust-type" name="cust-type">
+                                <option value="household">Household</option>
+                                <option value="business">Business</option>
+                                <option value="government">Government</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="cust-status">Status</label>
+                            <select id="cust-status" name="cust-status">
+                                <option value="active">Active</option>
+                                <option value="inactive">Inactive</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <hr class="form-divider">
+
+                    <h2>Mailing Address</h2>
+
+                    <div class="form-group">
+                        <label for="address-1">Address Line 1</label>
+                        <input type="text" id="address-1" name="address-1" value="12/233 Colombo Road, Rathnapura">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address-2">Address Line 2 (Optional)</label>
+                        <input type="text" id="address-2" name="address-2" value="12/233 Colombo Road, Rathnapura">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" value="Colombo">
+                        </div>
+                        <div class="form-group">
+                            <label for="zip-code">ZIP / Postal Code</label>
+                            <input type="text" id="zip-code" name="zip-code" value="13400">
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Save Customer</button>
+                        <a href="admin_customers.html" class="btn btn-secondary-outline">Cancel</a>
+                    </div>
+
+                </form>
+            </section>
+
+        </main>
+
+    </div>
+    <script src="admin_customer_form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaints - UMS</title>
+
+    <link rel="stylesheet" href="admin_layout.css">
+
+    <link rel="stylesheet" href="admin_customers.css">
+
+    <link rel="stylesheet" href="admin_complaints.css">
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="header-logo">
+                <a href="#">ADMIN</a>
+            </div>
+
+            <div class="header-user">
+                <div class="header-user">
+                    <span>Welcome, Yasiru</span>
+                    <a href="index.html" class="logout-link">Logout</a>
+                </div>
+
+
+        </header>
+
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="admin_dashboard.html">Dashboard</a></li>
+                    <li><a href="admin_customers.html">Customer Management</a></li>
+                    <li><a href="admin_services.html">Service Management</a></li>
+                    <li><a href="admin_tariffs.html">Tariff Plans</a></li>
+                    <li class="nav-active"><a href="admin_complaints.html">Complaints / Support</a></li>
+                    <li><a href="admin_reports.html">Reports</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="main-header">
+                <h1>Complaints & Support Tickets</h1>
+            </div>
+
+            <section class="content-section">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search by Ticket ID, Customer ID, or Subject...">
+                    <button class="btn btn-secondary">Search</button>
+                </div>
+
+                <div class="customer-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Ticket ID</th>
+                                <th>Customer ID</th>
+                                <th>Subject</th>
+                                <th>Status</th>
+                                <th>Last Updated</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>C-1022</td>
+                                <td>Billing Error on Invoice #B-5001</td>
+                                <td><span class="status-open">Open</span></td>
+                                <td>10:30 AM</td>
+                                <td>
+                                    <a href="admin_complaint_view.html" class="btn-action btn-view">View</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>02</td>
+                                <td>C-1024</td>
+                                <td>Low water pressure</td>
+                                <td><span class="status-progress">In Progress</span></td>
+                                <td>09:15 AM</td>
+                                <td>
+                                    <a href="admin_complaint_view.html" class="btn-action btn-view">View</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>03</td>
+                                <td>C-1023</td>
+                                <td>Request for new gas line</td>
+                                <td><span class="status-closed">Closed</span></td>
+                                <td>Yesterday</td>
+                                <td>
+                                    <a href="admin_complaint_view.html" class="btn-action btn-view">View</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

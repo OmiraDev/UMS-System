@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>View Complaint - UMS</title>
+
+  <link rel="stylesheet" href="admin_layout.css" />
+
+  <link rel="stylesheet" href="admin_forms.css" />
+
+  <link rel="stylesheet" href="admin_complaints.css" />
+
+  <link rel="stylesheet" href="admin_customer_deatils.css" />
+</head>
+
+<body>
+  <div class="grid-container">
+    <header class="header">
+      <div class="header-logo">
+        <a href="admin_dashboard.html">ADMIN</a>
+      </div>
+      <div class="header-user">
+        <span>Welcome, Yasiru</span>
+        <a href="index.html" class="logout-link">Logout</a>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="admin_dashboard.html">Dashboard</a></li>
+          <li class="nav-active">
+            <a href="admin_customers.html">Customer Management</a>
+          </li>
+          <li><a href="admin_services.html">Service Management</a></li>
+          <li><a href="admin_tariffs.html">Tariff Plans</a></li>
+          <li><a href="admin_complaints.html">Complaints / Support</a></li>
+          <li><a href="admin_reports.html">Reports</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+
+
+      <div class="complaint-grid">
+        <section class="content-section">
+          <h2>Customer Details</h2>
+
+          <div class="info-grid">
+            <div class="info-block">
+              <label>First Name</label>
+              <p>John </p>
+            </div>
+            <div class="info-block">
+              <label>Last Name</label>
+              <p>Doe</p>
+            </div>
+            <div class="info-block">
+              <label>Email Address</label>
+              <p>user@gmail.com</p>
+            </div>
+            <div class="info-block">
+              <label>Phone Number</label>
+              <p>+94 771233445</p>
+            </div>
+            <div class="info-block">
+              <label>Customer Type</label>
+              <p>Business</p>
+            </div>
+            <div class="info-block">
+              <label>Status</label>
+              <p><span class="status-open">Active</span></p>
+            </div>
+          </div>
+          <div class="address-grid">
+            <div class="info-block">
+              <label>Address</label>
+              <p>12/233 Colombo Road, Rathnapura</p>
+            </div>
+            <div class="info-block">
+              <label>City</label>
+              <p>Colombo</p>
+            </div>
+            <div class="info-block">
+              <label>Zip/ Postal Code</label>
+              <p>30500</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="admin_complaints_search.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+.report-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+.status-completed,
+.status-refunded,
+.status-failed {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 12px;
+    color: #fff;
+}
+
+.status-completed {
+    background-color: #28a745; 
+}
+
+.status-refunded {
+    background-color: #f0ad4e; 
+}
+
+.status-failed {
+    background-color: #d9534f; 
+}
+
+
+@media (max-width: 900px) {
+    .report-form .form-row {
+        grid-template-columns: 1fr; 
+        gap: 0;
+    }
+}

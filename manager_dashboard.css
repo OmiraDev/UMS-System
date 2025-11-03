@@ -1,0 +1,69 @@
+.card p {
+    color: #333; 
+}
+
+.card .kpi-positive {
+    color: #28a745; 
+}
+
+.card .kpi-negative {
+    color: #d9534f; 
+}
+
+
+.chart-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.chart-container h2 {
+    margin-top: 0;
+}
+
+.chart-placeholder {
+    display: grid;
+    place-items: center;
+    min-height: 250px;
+    background-color: #f9f9f9;
+    border: 1px dashed #ddd;
+    border-radius: 5px;
+    color: #999;
+    font-weight: 600;
+}
+
+
+.report-table {
+    overflow-x: auto;
+}
+
+.report-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.report-table th,
+.report-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.report-table th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+}
+
+.report-table .text-danger {
+    color: #d9534f;
+    font-weight: 600;
+}
+
+
+@media (max-width: 900px) {
+    .chart-section {
+        grid-template-columns: 1fr; 
+    }
+}

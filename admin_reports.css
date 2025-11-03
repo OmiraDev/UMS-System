@@ -1,0 +1,49 @@
+.report-generators {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.report-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.report-form .form-group {
+    
+    margin-bottom: 15px; 
+}
+
+
+
+.report-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.report-subtitle {
+    font-size: 14px;
+    color: #555;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+
+
+.customer-table .text-danger {
+    color: #d9534f;
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 900px) {
+    .report-generators {
+        grid-template-columns: 1fr; 
+    }
+}

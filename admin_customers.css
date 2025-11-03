@@ -1,0 +1,77 @@
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex-grow: 1; 
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px; 
+}
+
+.search-bar button {
+    border-radius: 0 5px 5px 0; 
+}
+
+
+.customer-table {
+    overflow-x: auto; 
+}
+
+.customer-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.customer-table th,
+.customer-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.customer-table th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+}
+
+.status-active, .status-inactive {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 12px;
+    color:#f9f9f9;
+}
+
+.status-active {
+    background-color: #28a745; 
+}
+
+.status-inactive {
+    background-color: #6c757d; 
+}
+
+
+.btn-action {
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.btn-view {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-edit {
+    background-color: #ffc107; 
+    color: #333;
+}

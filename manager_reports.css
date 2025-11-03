@@ -1,0 +1,22 @@
+/* manager_reports.css */
+
+.report-description {
+    font-size: 15px;
+    color: #555;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* We can reuse .customer-table from admin_customers.css */
+/* Add styles for table footers */
+.customer-table tfoot td {
+    border-top: 2px solid #333;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+.customer-table .text-right {
+    text-align: right;
+}

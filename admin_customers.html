@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management - UMS</title>
+    <link rel="stylesheet" href="admin_layout.css">
+    <link rel="stylesheet" href="admin_customers.css">
+
+</head>
+<body>
+    <div class="grid-container">
+       
+
+        <!-- ... (header and sidebar are the same, make sure links are filled!) ... -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="admin_dashboard.html">Dashboard</a></li>
+                    <li class="nav-active"><a href="admin_customers.html">Customer Management</a></li>
+                    <li><a href="admin_services.html">Service Management</a></li>
+                    <li><a href="admin_tariffs.html">Tariff Plans</a></li>
+                    <li><a href="admin_complaints.html">Complaints / Support</a></li>
+                    <li><a href="admin_reports.html">Reports</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+            <div class="main-header">
+                <h1>Customer Management</h1>
+                <a href="admin_customer_form.html" class="btn btn-primary">Add New Customer</a>
+            </div>
+
+            <section class="content-section">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search by Customer ID, Name, or Address...">
+                    <button class="btn btn-secondary">Search</button>
+                </div>
+
+
+
+                <div class="customer-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Customer ID</th>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+
+                        <!--
+
+                          UPDATED: The <tbody> is now empty.
+
+                          It will be filled by admin_customers_search.js
+
+                        -->
+
+                        <tbody>
+                            <!-- Data will be loaded here by JavaScript -->
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+
+    <!-- This file now handles both loading and searching -->
+
+    <script src="admin_customers_search.js"></script>
+
+</body>
+
+</html>

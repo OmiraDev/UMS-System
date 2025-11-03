@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - UMS</title>
+    <link rel="stylesheet" href="admin_style.css">
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="header-logo">
+                <a href="#">ADMIN</a>
+            </div>
+            <div class="header-user">
+                <span>Welcome, Yasiru</span>
+                <a href="index.html" class="logout-link">Logout</a>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="nav-active"><a href="#">Dashboard</a></li>
+                    <li><a href="admin_customers.html">Customer Management</a></li>
+                    <li><a href="admin_services.html">Service Management</a></li>
+                    <li><a href="admin_tariffs.html">Tariff Plans</a></li>
+                    <li><a href="admin_complaints.html">Complaints / Support</a></li>
+                    <li><a href="admin_reports.html">Reports</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h1>Admin Dashboard</h1>
+
+            <section class="stat-cards">
+                <div class="card">
+                    <h3>Total Customers</h3>
+                    <p>1,450</p>
+                </div>
+                <div class="card">
+                    <h3>New Connections (30 Days)</h3>
+                    <p>32</p>
+                </div>
+                <div class="card">
+                    <h3>Open Complaints</h3>
+                    <p>12</p>
+                </div>
+                <div class="card">
+                    <h3>Revenue (This Month)</h3>
+                    <p>RS:85,200</p>
+                </div>
+            </section>
+
+            <section class="quick-actions">
+                <h2>Quick Actions</h2>
+                <div class="action-buttons">
+                    <a href="admin_customer_form.html" class="btn btn-primary">Add New Customer</a>
+
+                    <a href="admin_tariffs.html" class="btn btn-secondary"> Manage Tariffs</a>
+
+                    <a href="admin_complaints.html" class="btn btn-secondary">View Complaints</a>
+                </div>
+            </section>
+
+            <section class="recent-activity">
+                <h2>Recent Activity</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Action</th>
+                            <th>Target</th>
+                            <th>Timestamp</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>C-1450</td>
+                            <td>New Registration</td>
+                            <td>-</td>
+                            <td>10:30 AM</td>
+                        </tr>
+                        <tr>
+                            <td>Admin-02</td>
+                            <td>Payment Recorded</td>
+                            <td>C-1022</td>
+                            <td>10:28 AM</td>
+                        </tr>
+                        <tr>
+                            <td>Field-04</td>
+                            <td>Meter Reading Submitted</td>
+                            <td>M-6019</td>
+                            <td>10:25 AM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

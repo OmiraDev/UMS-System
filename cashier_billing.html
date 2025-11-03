@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing - UMS</title>
+
+    <link rel="stylesheet" href="admin_layout.css">
+
+    <link rel="stylesheet" href="admin_forms.css">
+
+    <link rel="stylesheet" href="admin_customers.css">
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="header-logo">
+                <a href="#">CASHIER</a>
+            </div>
+            <div class="header-user">
+                <span>Welcome, Yasiru</span>
+                <a href="index.html" class="logout-link">Logout</a>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="cashier_payment.html">Process Payment</a></li>
+                    <li class="nav-active"><a href="cashier_billing.html">Billing</a></li>
+                    <li><a href="cashier_history.html">Payment History</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="main-header">
+                <h1>Generate Bills</h1>
+            </div>
+
+            <section class="content-section">
+                <h2>Generate New Billing Cycle</h2>
+                <p>This action will calculate and generate new bills for all active customers based on their latest
+                    meter readings.</p>
+
+                <form action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="billing-cycle">Billing Cycle (Month/Year)</label>
+                            <input type="text" id="billing-cycle" name="billing-cycle" placeholder="e.g., October 2025">
+                        </div>
+                        <div class="form-group">
+                            <label for="due-date">Payment Due Date</label>
+                            <input type="date" id="due-date" name="due-date">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Run Billing Cycle</button>
+                </form>
+            </section>
+
+            <section class="content-section">
+                <h2>Billing History</h2>
+
+                <div class="customer-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Batch ID</th>
+                                <th>Cycle</th>
+                                <th>Date Generated</th>
+                                <th>Total Bills</th>
+                                <th>Total Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>B-2025-09</td>
+                                <td>September 2025</td>
+                                <td>2025-10-01</td>
+                                <td>1,430</td>
+                                <td>RS:118,200.00</td>
+                                <td><span class="status-active">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>B-2025-08</td>
+                                <td>August 2025</td>
+                                <td>2025-09-01</td>
+                                <td>1,412</td>
+                                <td>RS:115,100.00</td>
+                                <td><span class="status-active">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>B-2025-07</td>
+                                <td>July 2025</td>
+                                <td>2025-08-01</td>
+                                <td>1,390</td>
+                                <td>RS:112,000.00</td>
+                                <td><span class="status-active">Completed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+    <script src="cashier_billing_validation.js"></script>
+</body>
+
+</html>

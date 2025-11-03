@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tariff Management - UMS</title>
+
+    <link rel="stylesheet" href="admin_layout.css">
+    <link rel="stylesheet" href="admin_customers.css">
+    <link rel="stylesheet" href="admin_tariffs.css">
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="header-logo">
+                <a href="admin_dashboard.html">ADMIN</a>
+            </div>
+            <div class="header-user">
+                <span>Welcome, Yasiru</span>
+                <a href="index.html" class="logout-link">Logout</a>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="admin_dashboard.html">Dashboard</a></li>
+                    <li><a href="admin_customers.html">Customer Management</a></li>
+                    <li><a href="admin_services.html">Service Management</a></li>
+                    <li class="nav-active"><a href="admin_tariffs.html">Tariff Plans</a></li>
+                    <li><a href="admin_complaints.html">Complaints / Support</a></li>
+                    <li><a href="admin_reports.html">Reports</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="main-header">
+                <h1>Tariff Management</h1>
+            </div>
+
+            <div class="tariff-grid">
+
+                <section class="content-section tariff-card">
+                    <h3>Electricity Supply</h3>
+                    <p class="utility-desc">Billing based on tariff slabs.</p>
+
+                    <ul class="tariff-list">
+                        <li><span>Slab 1 (0-60 kWh)</span> <strong>RS:0.15 / kWh</strong></li>
+                        <li><span>Slab 2 (61-90 kWh)</span> <strong>RS:0.25 / kWh</strong></li>
+                        <li><span>Slab 3 (91+ kWh)</span> <strong>RS:0.40 / kWh</strong></li>
+                        <li><span>Fixed Monthly Charge</span> <strong>RS:5.00</strong></li>
+                    </ul>
+
+                    <div class="tariff-footer">
+                        <a href="admin_tariff_form.html" class="btn-action btn-edit">Edit</a>
+                    </div>
+                </section>
+
+                <section class="content-section tariff-card">
+                    <h3>Water Supply</h3>
+                    <p class="utility-desc">Billing based on usage and fixed charges.</p>
+
+                    <ul class="tariff-list">
+                        <li><span>Usage Charge (per m³)</span> <strong>RS:1.20 / m³</strong></li>
+                        <li><span>Fixed Monthly Charge</span> <strong>RS:3.00</strong></li>
+                    </ul>
+
+                    <div class="tariff-footer">
+                        <a href="admin_tariff_form.html" class="btn-action btn-edit">Edit</a>
+                    </div>
+                </section>
+
+                <section class="content-section tariff-card">
+                    <h3>Gas Supply</h3>
+                    <p class="utility-desc">Billing dependent on tariffs and subsidies.</p>
+
+                    <ul class="tariff-list">
+                        <li><span>Usage Charge (per unit)</span> <strong>RS:0.80 / unit</strong></li>
+                        <li><span>Standard Subsidy</span> <strong>-RS:0.10 / unit</strong></li>
+                        <li><span>Fixed Monthly Charge</span> <strong>RS:2.50</strong></li>
+                    </ul>
+
+                    <div class="tariff-footer">
+                        <a href="admin_tariff_form.html" class="btn-action btn-edit">Edit</a>
+                    </div>
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

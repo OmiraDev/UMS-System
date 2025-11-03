@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Payment - UMS</title>
+
+    <link rel="stylesheet" href="admin_layout.css">
+    <link rel="stylesheet" href="admin_forms.css">
+    <link rel="stylesheet" href="cashier.css">
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <header class="header">
+            <div class="header-logo">
+                <a href="cashier_payment.html">CASHIER</a>
+            </div>
+            <div class="header-user">
+                <span>Welcome, Yasiru</span>
+                <a href="index.html" class="logout-link">Logout</a>
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="nav-active"><a href="cashier_payment.html">Process Payment</a></li>
+                    <li><a href="cashier_billing.html">Billing</a></li>
+                    <li><a href="cashier_history.html">Payment History</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="main-header">
+                <h1>Process Payment</h1>
+            </div>
+
+            <section class="content-section">
+                <h2>Find Customer or Bill</h2>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search by Customer ID, Bill ID, or Name...">
+                    <button class="btn btn-primary">Find</button>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Customer Details</h2>
+
+                <div class="payment-details-grid">
+
+                    <div class="customer-info">
+                        <h3>John Doe (C-1022)</h3>
+                        <div class="balance-due">
+                            <label>Outstanding Balance</label>
+                            <p>RS:320.50</p>
+                        </div>
+
+                        <form action="cashier_payment.html" method="GET" class="payment-form">
+                            <div class="form-group">
+                                <label for="payment-amount">Payment Amount</label>
+                                <input type="text" id="payment-amount" name="payment-amount" value="320.50">
+                            </div>
+                            <div class="form-group">
+                                <label for="payment-method">Payment Method</label>
+                                <select id="payment-method" name="payment-method">
+                                    <option value="cash">Cash</option>
+                                    <option value="card">Credit/Debit Card</option>
+                                    <option value="online">Online Transfer</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="payment-ref">Reference (Optional)</label>
+                                <input type="text" id="payment-ref" name="payment-ref">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full-width">Record Payment</button>
+                        </form>
+                    </div>
+
+                    <div class="unpaid-bills">
+                        <h3>Unpaid Bills</h3>
+                        <ul class="bill-list">
+                            <li>
+                                <span class="bill-id">Bill B-5001</span>
+                                <span class="bill-date">Due: Oct 15, 2025</span>
+                                <span class="bill-amount">RS:150.00</span>
+                            </li>
+                            <li>
+                                <span class="bill-id">Bill B-5002</span>
+                                <span class="bill-date">Due: Sep 15, 2025</span>
+                                <span class="bill-amount">RS:170.50</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+    <script src="cashier_payment_validation.js"></script>
+    <script src="cashier_search.js"></script>
+
+</body>
+
+</html>
